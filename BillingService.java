@@ -5,6 +5,7 @@ class BillingService {
     double calculateBill(Plan plan, int months) {
         // Calculate the total amount before discount
         double total = plan.monthlyPrice * months;
+        // Calculate discount amount based on the plan's discount percentage
         double discount = (total * plan.discount) / 100;
 
         return total - discount;
