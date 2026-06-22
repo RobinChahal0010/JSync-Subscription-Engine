@@ -3,7 +3,7 @@ import java.util.*;
 class BillingService {
     // Calculates the total bill after applying the plan discount
     double calculateBill(Plan plan, int months) {
-
+        // Calculate the total amount before discount
         double total = plan.monthlyPrice * months;
         double discount = (total * plan.discount) / 100;
 
