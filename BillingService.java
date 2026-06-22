@@ -1,7 +1,7 @@
 import java.util.*;
 
 class BillingService {
-
+    // Calculates the total bill after applying the plan discount
     double calculateBill(Plan plan, int months) {
 
         double total = plan.monthlyPrice * months;
