@@ -7,7 +7,7 @@ class BillingService {
         double total = plan.monthlyPrice * months;
         // Calculate discount amount based on the plan's discount percentage
         double discount = (total * plan.discount) / 100;
-
+        // Return the final bill after subtracting the discount
         return total - discount;
     }
 
