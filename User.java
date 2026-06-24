@@ -4,6 +4,7 @@ class User{
     String name;
     double balance;
     User(String name,double balance){
+        this.userId=nextId++;
         this.name=name;
         this.balance=balance;
     }
