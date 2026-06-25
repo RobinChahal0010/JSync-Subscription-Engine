@@ -16,6 +16,9 @@ class BillingService {
         return total - discount;
     }
     // Adds a transaction to the user's history
+    void addTransaction(User user,
+                        double amount,
+                        String status)
     // Handles one-time/flexible billing chosen by the user
     void processFlexible(User user, Plan plan, int months) {
 
