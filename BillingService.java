@@ -1,6 +1,8 @@
 import java.util.*;
 
 class BillingService {
+    
+    // User ID -> Transaction History
     // Calculates the total bill after applying the plan discount
     double calculateBill(Plan plan, int months) {
         // Calculate the total amount before discount
