@@ -18,7 +18,13 @@ class BillingService {
     // Adds a transaction to the user's history
     void addTransaction(User user,
                         double amount,
-                        String status)
+                        String status){
+
+        transactionHistory
+                .computeIfAbsent(user.userId,
+                        k -> new ArrayList<>())
+                .add(new Transaction(amount, status));
+    }
     // Handles one-time/flexible billing chosen by the user
     void processFlexible(User user, Plan plan, int months) {
 
