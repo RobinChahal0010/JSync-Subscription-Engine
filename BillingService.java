@@ -15,6 +15,7 @@ class BillingService {
         // Return the final bill after subtracting the discount
         return total - discount;
     }
+    // Adds a transaction to the user's history
     // Handles one-time/flexible billing chosen by the user
     void processFlexible(User user, Plan plan, int months) {
 
