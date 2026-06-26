@@ -2,7 +2,7 @@ import java.util.*;
 
 class BillingService {
     
-    // User ID -> Transaction
+    // User ID 
     HashMap<Integer, ArrayList<Transaction>> transactionHistory =
             new HashMap<>();
 
