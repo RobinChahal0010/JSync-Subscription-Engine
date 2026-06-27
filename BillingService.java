@@ -38,6 +38,7 @@ class BillingService {
             addTransaction(user, bill, "SUCCESS");
         } else {
             System.out.println("Payment FAILED - Low Balance");
+            addTransaction(user, bill, "FAILED");
         }
     }
 
