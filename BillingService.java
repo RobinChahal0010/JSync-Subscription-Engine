@@ -35,6 +35,7 @@ class BillingService {
         if (user.balance >= bill) {
             user.balance -= bill;
             System.out.println("Payment SUCCESS");
+            addTransaction(user, bill, "SUCCESS");
         } else {
             System.out.println("Payment FAILED - Low Balance");
         }
