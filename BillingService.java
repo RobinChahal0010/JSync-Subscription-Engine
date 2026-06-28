@@ -60,6 +60,7 @@ class BillingService {
                 sub.user.balance -= bill;
 
                 System.out.println("Payment SUCCESS: " + bill);
+                addTransaction(sub.user, bill, "SUCCESS");
 
                 Calendar cal = Calendar.getInstance();
                 cal.setTime(sub.nextBillingDate);
