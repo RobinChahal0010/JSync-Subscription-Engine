@@ -81,5 +81,7 @@ class BillingService {
         if (history == null || history.isEmpty()) {
 
             System.out.println("No transactions found.");
+            return;
+        }
 
 }
