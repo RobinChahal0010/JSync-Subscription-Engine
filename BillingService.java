@@ -84,5 +84,8 @@ class BillingService {
             return;
         }
          for (Transaction transaction : history) {
+              System.out.println(transaction);
+        }
+    }
 
 }
