@@ -74,4 +74,5 @@ class BillingService {
             }
         }
     }
+    void showTransactionHistory
 }
