@@ -78,4 +78,5 @@ class BillingService {
 
         ArrayList<Transaction> history =
             transactionHistory.get(user.userId);
+        if (history == null || history.isEmpty()) 
 }
