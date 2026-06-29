@@ -77,4 +77,5 @@ class BillingService {
     void showTransactionHistory(User user){
 
         ArrayList<Transaction> history =
+            transactionHistory.get(user.userId);
 }
