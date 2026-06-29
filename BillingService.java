@@ -74,5 +74,7 @@ class BillingService {
             }
         }
     }
-    void showTransactionHistory(User user)
+    void showTransactionHistory(User user){
+
+        ArrayList<Transaction> history =
 }
