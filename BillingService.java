@@ -83,5 +83,6 @@ class BillingService {
             System.out.println("No transactions found.");
             return;
         }
+         for (Transaction transaction : history) {
 
 }
