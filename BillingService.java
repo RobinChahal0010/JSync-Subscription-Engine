@@ -74,5 +74,5 @@ class BillingService {
             }
         }
     }
-    void showTransactionHistory
+    void showTransactionHistory(User user)
 }
