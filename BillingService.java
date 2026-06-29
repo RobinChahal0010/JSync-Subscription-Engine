@@ -78,5 +78,8 @@ class BillingService {
 
         ArrayList<Transaction> history =
             transactionHistory.get(user.userId);
-        if (history == null || history.isEmpty()) 
+        if (history == null || history.isEmpty()) {
+
+            System.out.println("No transactions found.");
+
 }
