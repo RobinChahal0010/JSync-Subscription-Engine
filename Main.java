@@ -54,7 +54,7 @@ public class Main {
             bs.processBilling(sub);
         }
 
-        System.out.println("\nRemaining Balance: " + user.balance);
+        System.out.println(
 
         sc.close();
     }
