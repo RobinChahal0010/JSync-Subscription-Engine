@@ -6,7 +6,7 @@ class BillingService {
     HashMap<Integer, ArrayList<Transaction>> transactionHistory =
             new HashMap<>();
 
-    // Calculates the total bill after applying the plan discount
+    // Calculates the total bill 
     double calculateBill(Plan plan, int months) {
         // Calculate the total amount before discount
         double total = plan.monthlyPrice * months;
